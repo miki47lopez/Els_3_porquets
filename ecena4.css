@@ -1,0 +1,197 @@
+#fons{
+    position: absolute;
+    height: 800px;
+    width: 1090px;
+}
+
+    /*movimet fusta1*/
+
+@keyframes movimentfustaS4 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+    20% {
+    left: 0px;
+    top: -350px;
+    }
+    
+     50% {
+    left: -650px;
+    top: -350px;
+    }
+    
+      100% {
+    left: -650px;
+    top: -300px;
+    }
+    
+}
+.mfustaS4 {
+  
+    height: 150px;
+    position: absolute;
+    width: 200px;
+    top: 350px;
+    left: 750px;
+   
+}
+.mfustaS4:hover .fustaS4 {
+    transform: scale(0.5);
+    animation: movimentfustaS4 3s linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.fustaS4 {
+    height: 150px;
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    left: 0px;
+    transition: all 3s;
+    
+}
+
+        /*movimet fusta 2*/
+
+@keyframes movimentfusta2S4 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+    20% {
+    left: 0px;
+    top: -350px;
+    }
+    
+     50% {
+    left: -650px;
+    top: -350px;
+    }
+    
+      100% {
+    left: -650px;
+    top: -300px;
+    }
+    
+}
+.mfusta2S4 {
+  
+    height: 130px;
+    position: absolute;
+    width: 230px;
+    top: 400px;
+    left: 750px;
+   
+}
+.mfusta2S4:hover .fusta2S4 {
+    transform: scale(0.5);
+    animation: movimentfusta2S4 3s linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.fusta2S4 {
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    width: 230px;
+    left: 0px;
+    transition: all 2s;
+    
+}
+
+            /*moviment martell*/
+
+@keyframes movimentmartell {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+    20% {
+    left: 0px;
+    top: -580px;
+    }
+    
+     50% {
+    left: 0px;
+    top: -600px;
+    }
+    
+      100% {
+    left: 0px;
+    top: -500px;
+    }
+    
+}
+.mmartell {
+  
+    height: 130px;
+    position: absolute;
+    width: 230px;
+    top: 650px;
+    left: 780px;
+   
+}
+.mmartell:hover .martell {
+    transform: scale(0.5);
+    animation: movimentmartell 3s linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.martell {
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    width: 230px;
+    left: 0px;
+    transition: all 2.3s;
+    
+}
+
+        /*moviment text*/
+
+.card-container {
+  cursor: pointer;
+    top: 0px;
+    left: 340px;
+  height: 200px;
+  perspective: 600;
+  position: relative;
+  width: 450px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+#flecha
+{
+    position: absolute;
+    top: 650px;
+    left: 850px;
+    height: 100px;
+    width: 150px;
+}

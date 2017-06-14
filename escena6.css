@@ -1,0 +1,94 @@
+#fons{
+    position: absolute;
+    height: 800px;
+    width: 1090px;
+}
+.porket{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+@keyframes movimentpork {
+  0% {
+    left: 0;
+    top: 0px;
+  }
+
+  100% {
+    left: 250px;
+    top: 00;
+  }
+}
+.mporket {
+  
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    top: 330px;
+    left: 630px;
+   
+}
+
+.porket {
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    left: 0px;
+    animation: tremolor 0.5s linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+.mporket:hover .porket {
+    animation: movimentpork 1s linear;
+    animation-fill-mode: forwards;
+}
+
+        /*moviment text*/
+
+
+.card-container {
+  cursor: pointer;
+    top: 10px;
+    left: 0px;
+  height: 200px;
+  perspective: 600;
+  position: relative;
+  width: 450px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+#flecha
+{
+    position: absolute;
+    top: 650px;
+    left: 850px;
+    height: 100px;
+    width: 150px;
+}

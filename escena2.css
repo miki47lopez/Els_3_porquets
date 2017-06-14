@@ -1,0 +1,288 @@
+#fons{
+    position: absolute;
+    height: 800px;
+    width: 1090px;
+}
+
+                        /* Animació fusta*/
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: -180px;
+  }
+}
+.mfusta {
+  
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    top: 500px;
+    left: 200px;
+   
+}
+.mfusta:hover .fusta {
+  animation: slide 1s linear;
+    animation-fill-mode: forwards;
+}
+.fusta {
+    height: 100px;
+    position: absolute;
+    top: 500px;
+    width: 200px;
+    
+    animation: tremolor 0.5s linear;
+    animation-iteration-count: infinite;
+}
+                        /* Animació fusta2*/
+
+@keyframes movimentfusta2 {
+  0% {
+    left: 0;
+    top: 0px;
+  }
+
+  100% {
+    left: 0px;
+    top: -250px;
+  }
+}
+.mfusta2 {
+  
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    top: 550px;
+    left: 300px;
+    
+   
+}
+.mfusta2:hover .fusta2 {
+  animation: movimentfusta2 1s linear;
+  animation-fill-mode: forwards;
+}
+.fusta2 {
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    animation: tremolor 0.5s linear;
+    animation-iteration-count: infinite;
+    
+}
+                    
+                        /* Animació toxo*/
+
+@keyframes movimentToxo {
+  0% {
+    left: 0;
+    top: 0px;
+  }
+
+  100% {
+    left: 500px;
+    top: 00;
+  }
+}
+.mtoxo {
+  
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    top: 650px;
+    left: 350px;
+   
+}
+
+.toxo {
+  height: 100px;
+  position: absolute;
+    top: 0px;
+  width: 200px;
+    left: 0px;
+    animation: tremolor 0.5s linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+.mtoxo:hover .toxo {
+    animation: movimentToxo 1s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tremolor {
+  0% {
+    left: 0;
+    top: 0px;
+  }
+
+  50% {
+    left: -1px;
+    top: 00;
+  }
+    100% {
+    left: 1px;
+    top: 00;
+  }
+}
+
+            /*Animació serra*/
+
+@keyframes movimentSerra {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: -20px;
+    top: -250px;
+  }
+  50% {
+    left: -50px;
+    top: -250px;
+  }
+    75% {
+    left: 50px;
+    top: -250px;
+  }
+    100% {
+    left: 0px;
+    top: 0px;
+  }
+
+}
+.mserra {
+  
+    height: 50px;
+    position: absolute;
+    width: 200px;
+    top: 690px;
+    left: 30px;
+   
+}
+.mserra:hover .serra {
+  animation: movimentSerra 5s linear;
+  animation-fill-mode: forwards;
+}
+.serra {
+  height: 100px;
+  position: absolute;
+    top: 0px;
+  width: 200px;
+    left: 0px;
+    animation: tremolor 0.5s linear;
+    animation-iteration-count: infinite;
+}
+
+            /*animacio text 1*/
+
+.text1 {
+ 
+  border-radius: 3px;
+  height: 200px;
+  margin: 100px;
+  position: absolute;
+   top: -100px;
+    left: 300px;
+  transition: transform 0.8s;
+  width: 400px;
+}
+
+.admiracio1 {
+    
+  border-radius: 3px;
+  height: 200px;
+  margin: 100px;
+  transition: transform 0.8s;
+  position: absolute;
+    top: -100px;
+    left: 300px;
+  width: 400px;
+}
+    
+        .admiracio1:hover {
+      transform: translate(200px, -400px);
+  }
+
+
+            /*animacio text 1*/
+
+
+.text2 {
+ 
+  border-radius: 3px;
+  height: 200px;
+  margin: 100px;
+  position: absolute;
+   top: -70px;
+    left: -80px;
+  transition: transform 0.8s;
+  width: 400px;
+}
+
+.admiracio2 {
+    
+  border-radius: 3px;
+  height: 200px;
+  margin: 100px;
+  transition: transform 0.8s;
+  position: absolute;
+    top: -70px;
+    left: -80px;
+  width: 400px;
+}
+    
+        .admiracio2:hover {
+      transform: translate(200px, -400px);
+  }
+
+
+            /*animacio text 2*/
+
+.card-container {
+  cursor: pointer;
+    top: 150px;
+    left: 700px;
+  height: 170px;
+  perspective: 600;
+  position: relative;
+  width: 380px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+#flecha
+{
+    position: absolute;
+    top: 650px;
+    left: 850px;
+    height: 100px;
+    width: 150px;
+}

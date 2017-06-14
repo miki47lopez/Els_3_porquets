@@ -1,0 +1,104 @@
+body
+{
+    height: 768px;
+    width: 1024px;
+    background-size: 1032px;
+}
+
+#interrogant 
+{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    transition: transform 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#interrogant:hover 
+{
+  transform: rotate(1080deg);
+}
+
+#fons
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 775px;
+    width: 1033px;
+    
+}
+.trans {
+  
+  height: 180px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+    
+}
+
+.lluna
+{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    height: 70px;
+    width: auto;
+    border-radius: 60%;
+
+}
+  
+.trans .lluna:hover 
+{
+    transform: scale(2);
+    transition: all 3s;
+ }
+    
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 300;
+  }
+  100% {
+    left: 210px;
+    top: 0;
+  }
+}
+.moviment {
+  
+  height: 150px;
+  position: absolute;
+  top: 220px;
+  left:230px;
+  width: 550px;
+  height: 550px;
+    
+}
+.moviment .llop:hover {
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: .1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.llop {
+  
+  position: absolute;
+  top: 300px;
+    
+}
+
+#flecha
+{
+    position: absolute;
+    top: 650px;
+    left: 850px;
+    height: 100px;
+    width: 150px;
+}
+
+

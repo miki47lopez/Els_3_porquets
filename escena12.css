@@ -1,0 +1,79 @@
+body
+{
+    height: 768px;
+    width: 1024px;
+    background-size: 1032px;
+}
+
+#interrogant 
+{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    transition: transform 2s;
+    transition-timing-function: ease-in-out;
+}
+
+#interrogant:hover 
+{
+  transform: rotate(1080deg);
+}
+
+#fons
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 775px;
+    width: 1033px;
+    
+}
+
+#xama
+{
+    position: absolute;
+    top: 70px;
+    left: 830px;
+}
+
+@keyframes slide {
+  0% {left: -1px;
+    top: 0px;
+    }
+   
+  100% {
+    left: 1px;
+    top: 0px;
+  }
+    
+}
+.moviment {
+  height: 250px;
+  width: 150px;
+  position: absolute;
+  top: 55px;
+left: 60px;
+    animation: slide 1s linear;
+    animation-iteration-count: infinite;
+}
+.moviment:hover .xama {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+ animation-fill-mode: forwards;
+
+}
+
+
+#flecha
+{
+    position: absolute;
+    top: 650px;
+    left: 850px;
+    height: 100px;
+    width: 150px;
+}
+
+

@@ -1,0 +1,123 @@
+#fons{
+    position: absolute;
+    height: 800px;
+    width: 1090px;
+}
+
+.card-container {
+  cursor: pointer;
+    top: 620px;
+    left: 350px;
+  height: 170px;
+  perspective: 600;
+  position: relative;
+  width: 290px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  
+  line-height: 0px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+        /*moviment ciment*/
+
+@keyframes movimentciment {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+    100% {
+    left: 0px;
+    top: -300px;
+    }
+    
+}
+.mciment {
+  
+    height: 130px;
+    position: absolute;
+    width: 230px;
+    top: 650px;
+    left: 380px;
+   
+}
+.mciment:hover .ciment {
+    transform: scale(0.5);
+    animation: movimentciment 3s linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.ciment {
+    height: 130px;
+    position: absolute;
+    top: 0px;
+    width: 230px;
+    left: 0px;
+    transition: all 2.3s;
+    
+}
+
+            /*moviment text*/
+
+.card-container1 {
+  cursor: pointer;
+    top: -90px;
+    left: 50px;
+  height: 200px;
+  perspective: 600;
+  position: relative;
+  width: 480px;
+}
+.card1 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card1:hover {
+  transform: rotateY(180deg);
+}
+.card1 .side1 {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card1 .back1 {
+  
+  line-height: 0px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+#flecha
+{
+    position: absolute;
+    top: 650px;
+    left: 850px;
+    height: 100px;
+    width: 150px;
+}
